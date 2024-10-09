@@ -6,14 +6,14 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 22:04:12 by hurabe            #+#    #+#             */
-/*   Updated: 2024/10/08 22:48:07 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/10/09 18:24:25 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
 // 0:NG  1:Mandelbrot  2:Julia
-static int	get_kind_of_fractal(char *str)
+static int	get_kind_of_fractol(char *str)
 {
 	if (ft_strncmp(str, "Mandelbrot", 11) == 0 || ft_strncmp(str, "M", 2) == 0)
 		return (1);
