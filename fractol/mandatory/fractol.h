@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 21:50:46 by hurabe            #+#    #+#             */
-/*   Updated: 2024/10/08 22:27:17 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/10/09 18:46:41 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@
 // struct
 typedef struct s_img
 {
-	void	*img; // 画像のメモリアドレス
-	void	*addr; // 画像の中身のメモリアドレス
+	void	*img;
+	void	*addr;
 	int		bpp;
 	int		line_size;
 	int		endian;
@@ -34,12 +34,12 @@ typedef struct s_img
 
 typedef struct s_fractol
 {
-	void	*mlx; // minilibxとしての設定はここから始まる。メモリを確保
-	void	*win; // minilibxの画面アドレス
+	void	*mlx;
+	void	*win;
 	int		kind;
-	double	arg_r; // ジュリア集合用のパラメーター、
-	double	arg_i; // 
-	double	max_r; // 画面幅
+	double	arg_r;
+	double	arg_i;
+	double	max_r;
 	double	max_i;
 	double	min_r;
 	double	min_i;
